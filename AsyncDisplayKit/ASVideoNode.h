@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, strong, readwrite) AVAsset *asset;
 /**
- ** @abstract The URL with which the asset was initialized.
+ ** @abstract The URL with which the asset was initialized. Please set the URL if the video is streaming-based, like Http Live Streaming videos.
  ** @discussion Setting the URL will overwrite the current asset with a newly created AVURLAsset created from the given URL, and AVAsset *asset will point to that newly created AVURLAsset.  Please don't set both assetURL and asset.
  ** @return Current URL the asset was initialized or nil if no URL was given.
  **/
